@@ -1,5 +1,5 @@
 # RetroFE Cross-platform MAME Frontend
-
+[Documentation](http://www.retrofe.nl/wiki/doku.php)
 <!-- TOC -->
 - [RetroFE Cross-platform MAME Frontend](#retrofe-cross-platform-mame-frontend)
 	- [Getting Started](#getting-started)
