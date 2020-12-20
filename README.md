@@ -1,6 +1,38 @@
-# RetroFE Multi-platform MAME Frontend
+# RetroFE Cross-platform MAME Frontend
 
+<!-- TOC -->
+auto    - [Getting Started](#getting-started)
+auto    - [Installing on MacOS](#installing-on-macos)
+auto        - [Run RetroFE as an app from the Applications follder](#run-retrofe-as-an-app-from-the-applications-follder)
+auto        - [Install RetroArch](#install-retroarch)
+auto        - [Accessing RetroFE Configurations and installing ROMS](#accessing-retrofe-configurations-and-installing-roms)
+auto        - [Optional](#optional)
+auto            - [Fix libpng iCCP warnings about incorrect sRGB profile](#fix-libpng-iccp-warnings-about-incorrect-srgb-profile)
+auto            - [Set $RETROFE_PATH via Environment variable](#set-retrofe_path-via-environment-variable)
+auto            - [Set RETROFE_PATH via flat file](#set-retrofe_path-via-flat-file)
+auto        - [Mac download and compile RetroFE from source code](#mac-download-and-compile-retrofe-from-source-code)
+auto    - [Compiling and installing on Ubuntu Linux (10.04 or newer)](#compiling-and-installing-on-ubuntu-linux-1004-or-newer)
+auto        - [Install libraries](#install-libraries)
+auto        - [Download and compile the source code](#download-and-compile-the-source-code)
+auto    - [Compiling and installing on Windows](#compiling-and-installing-on-windows)
+auto        - [Install libraries](#install-libraries-1)
+auto        - [Download and compile the source code](#download-and-compile-the-source-code-1)
+auto    - [Compiling and Installing on Raspberry Pi 2 (raspbian)](#compiling-and-installing-on-raspberry-pi-2-raspbian)
+auto    - [Authors](#authors)
+auto    - [License](#license)
+<!-- /TOC -->
+
+## Getting Started
 RetroFE is a cross-platform frontend designed for MAME cabinets/game centers/etc. with a focus on simplicity and customization.
+
+The full releases contain a 32-bit Windows executable (in the core directory, with a link in the RetroFE directory) and a 64 bit Linux executable (in the RetroFE directory). If you run Linux however, depending on your distribution, you may need to compile your own executable from the source. MacOS users will always need to compile their own executable.
+
+Additional themes can be downloaded from the [Themes page](http://retrofe.nl/download/download-themes/).
+
+Note: Some people report that for windows the installation of a codec pack for video playback may be needed. A suggestion would be to [download Shark’s STANDARD video codec pack](https://shark007.net/advanced.html) .
+
+Note: Windows users will require a recent version of [Visual C++ Redistributable for Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48145).
+
 
 ## Installing on MacOS
 
@@ -167,3 +199,12 @@ Copy your live RetroFE system to any folder of your choosing. files can be found
 Just run the following on your raspberry pi 2 (assuming you have an internet connection:
 
 	bash <(curl -s https://github.com/pixelpicnic/RetroFE/Scripts/Raspi2/install.sh)
+
+## Authors
+This Repo was forked from [phulshof/RetroFE](https://github.com/phulshof/RetroFE) and all thanks go to **phulshof** for putting this project together.
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.txt) file for details
